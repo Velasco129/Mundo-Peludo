@@ -12,6 +12,19 @@ let navegacion = `
 
 </nav>`
 
+let navegacionuser = `
+<nav class="navi">
+<div class="logo">
+<a class="cont-link" href="./Index.html">
+<img src="./img/Logosolo.png" alt="logode la marca" >
+<h2>Patitas Sanas</h2></a> 
+</div>
+<div class="lio"><a class="link" href="./Productos.html">Productos</a>
+<a class="link" href="./Servicios.html">Servicios</a>
+<a class="link" href="./Nosotros.html">Nosotros</a>
+<button type="button" class="linki" onclick="logout()">Salir</button></div>
+
+</nav>`
 let navegacionadmin =`<nav class="navi">
       <div class="logo">
         <a class="cont-link" href="./Index.html">
