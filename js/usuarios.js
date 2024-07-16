@@ -23,7 +23,7 @@ createApp({
                 .then(data => {
                     this.usuarios = data;
                     this.cargando = false
-                    this.oculto= this.usuarios.forEach(usuariolo => {
+                    this.oculto= this.usuarios.forEach(usuario => {
                         // Agrega una nueva clave-valor 'estado' a cada usuario
                         usuario.oculto = true;
                     });
