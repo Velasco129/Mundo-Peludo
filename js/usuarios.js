@@ -62,7 +62,7 @@ createApp({
             fetch(this.url, options)
                 .then(function () {
                     alert("Registro grabado")
-                    if(sessionStorage.getItem("add") !==1){
+                    if(sessionStorage.getItem("") !==1){
                         window.location.href = "./Index.html"
                     }else{
                     window.location.href = "./usuario.html";  // recarga productos.html
@@ -74,7 +74,7 @@ createApp({
         },
 
         login() {
-            const usuario = this.usuarios;
+            const usuario = this.usuario;
             sessionStorage.setItem("adm", 0);
             let i = 0
             while (i < this.usuarios.length && this.usuarios[i].usuario !== this.usuario) {
