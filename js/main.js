@@ -43,10 +43,10 @@ let pie = `<h2>Seguinos en las redes</h2>
   <a class="kiko" href="./Contacto.html">Contactenos</a>
 <p>Sitio desarrollado en codo a codo</p>
 `
-logout() {
-            sessionStorage.setItem("adm", 0);
-            window.location.href = "./Index.html"
-        },
+function logout() {
+  sessionStorage.setItem("adm", 0);
+  window.location.href = "./Index.html"
+}
 
 document.querySelector("header").innerHTML = navegacion
 document.querySelector("footer").innerHTML = pie
