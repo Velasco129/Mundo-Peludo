@@ -46,7 +46,7 @@ let pie = `<h2>Seguinos en las redes</h2>
 logout() {
             sessionStorage.setItem("adm", 0);
             window.location.href = "./Index.html"
-        }
+        },
 
 document.querySelector("header").innerHTML = navegacion
 document.querySelector("footer").innerHTML = pie
