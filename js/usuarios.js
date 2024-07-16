@@ -74,7 +74,7 @@ createApp({
         },
 
         login() {
-            const usuario = this.usuario;
+            const usuario = this.usuarios;
             sessionStorage.setItem("adm", 0);
             let i = 0
             while (i < this.usuarios.length && this.usuarios[i].usuario !== this.usuario) {
