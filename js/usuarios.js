@@ -62,7 +62,7 @@ createApp({
                 .then(function () {
                     alert("Registro grabado")
                     if(sessionStorage.getItem("adm") === "1"){
-                        window.location.href = "./usuarios.html"
+                        window.location.href = "./usuario.html"
                     }else{
                         window.location.href = "./Index.html";
                     }
