@@ -99,6 +99,7 @@ createApp({
 
         logout() {
             sessionStorage.clear();
+            window.location.href = "./Index.html
         },
 
         ocultar(){
