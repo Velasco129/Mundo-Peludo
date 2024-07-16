@@ -98,7 +98,7 @@ createApp({
         },
 
         logout() {
-            sessionStorage.setItem("adm", 0);
+            sessionStorage.clear();
         },
 
         ocultar(){
