@@ -62,7 +62,7 @@ createApp({
             fetch(this.url, options)
                 .then(function () {
                     alert("Registro grabado")
-                    window.location.href = "./usuario.html";  // recarga productos.html
+                    window.location.href = "./Index.html";  // recarga productos.html
                 })
                 .catch(err => {
                     console.error(err);
