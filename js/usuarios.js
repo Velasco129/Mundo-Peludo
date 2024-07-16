@@ -62,11 +62,8 @@ createApp({
             fetch(this.url, options)
                 .then(function () {
                     alert("Registro grabado")
-
-                        window.location.href = "./Index.html"
-                    }
                     window.location.href = "./usuario.html";  // recarga productos.html
-                }})
+                })
                 .catch(err => {
                     console.error(err);
                     alert("Error al Grabar")  // puedo mostrar el error tambien
