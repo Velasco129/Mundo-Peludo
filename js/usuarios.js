@@ -28,7 +28,6 @@ createApp({
                         usuario.oculto = true;
                     });
                     console.log(this.usuarios)
-                    console.log(this.oculto)
                 })
                 .catch(err => {
                     console.error(err);
