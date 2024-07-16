@@ -102,10 +102,6 @@ createApp({
             window.location.href = "./Index.html"
         },
 
-        ocultar(){
-            
-
-        }
 
     },
     created() {
