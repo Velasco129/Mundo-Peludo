@@ -57,7 +57,7 @@ let pie = `<h2>Seguinos en las redes</h2>
 <p>Sitio desarrollado en codo a codo</p>
 `
 function logout() {
-  sessionStorage.setItem("adm", 0);
+  sessionStorage.clear();
   window.location.href = "./Index.html"
 }
 
