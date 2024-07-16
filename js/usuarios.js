@@ -61,7 +61,11 @@ createApp({
             fetch(this.url, options)
                 .then(function () {
                     alert("Registro grabado")
-                    window.location.href = "./Index.html";  // recarga productos.html
+                    if(sessionStorage.getItem("") === "" ||sessionStorage.getItem("adm")===0){
+                        window.location.href = "./Index.html"
+                    }else{
+                        window.location.href = "./usuarios.html";
+                    }
                 })
                 .catch(err => {
                     console.error(err);
