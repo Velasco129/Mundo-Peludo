@@ -32,7 +32,7 @@ let navegacionadmin =`<nav class="navi">
           </ul>
         </ul>
       </div>
-      <button type="button" class="linki" v-on:click="logout()">Salir</button>
+      <button type="button" class="linki" onclick="logout()">Salir</button>
 
     </nav>`
     
