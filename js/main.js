@@ -51,11 +51,12 @@ function logout() {
 document.querySelector("header").innerHTML = navegacion
 document.querySelector("footer").innerHTML = pie
 
-  if (sessionStorage.getItem("adm") !== "1") {
-    document.querySelector("header").innerHTML = navegacion
-  } else {
+  if (sessionStorage.getItem("adm") === "1") {
     document.querySelector("header").innerHTML = navegacionadmin
-  }
+  } else if(
+    sessionStorage.getItem("adm") === "0"){
+    document.querySelector("header").innerHTML = navegacionuser
+  } else{document.querySelector("header").innerHTML = navegacion}
 
 
 
