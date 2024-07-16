@@ -47,7 +47,6 @@ createApp({
                 })
         },
         grabar() {
-            sessionStorage.setItem("adm", 0)
             let usuario = {
                 usuario: this.usuario,
                 clave: this.clave,
