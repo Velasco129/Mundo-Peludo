@@ -1235,5 +1235,37 @@ a.ki{
     text-decoration: none;
     color: #1D0D00;
     font-size: 20px;
-  
+}
+
+td{
+    font-weight: 500;
+}
+td span{
+    font-weight: 500;
+}
+input#usuario{
+    min-width: 200px;
+    min-height: 30px;
+    font-weight: 500;
+}
+input#clave{
+    min-width: 200px;
+    min-height: 30px;
+    font-weight: 500;
+}
+input#nombre{
+    font-weight: 500;
+}
+input#precio{
+    font-weight: 500;
+}
+input#stock{
+    font-weight: 500;
+}
+select#tipoproducto{
+    font-weight: 500;
+}
+
+input#imagen{
+    font-weight: 500;
 }
