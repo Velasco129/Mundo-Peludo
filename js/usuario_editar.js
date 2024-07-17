@@ -9,7 +9,8 @@ createApp({
             usuario: "",
             clave: "",
             rol: 0,
-            url: 'https://cualquiera22.pythonanywhere.com/usuarios/'+ id,
+            url: 'https://cualquiera22.pythonanywhere.com/usuarios/' + id,
+            error:false
         }
 
     },
@@ -20,15 +21,15 @@ createApp({
                 .then(data => {
                     console.log(data)
                     this.id = data.id
-                    this.usuario = data.usuario;
+                    this.usuario = data.usuario
                     this.clave = data.clave
                     this.rol = data.rol
 
                 })
                 .catch(err => {
                     console.error(err);
-                    this.error = true
-                })
+                    this.error = true;
+                });
         },
         modificar() {
             let usuario = {
@@ -39,21 +40,21 @@ createApp({
             var options = {
                 body: JSON.stringify(usuario),
                 method: "PUT",
-            headers: { 'Content - Type':'application/json'},
-            redirect: 'follow'
+                headers: { 'Content-Type': 'application/json' },
+                redirect: 'follow'
+            }
+            fetch(this.url, options)
+                .then(function () {
+                    alert("Registro modificado")
+                    window.location.href = "./usuario.html" 
+                })
+                .catch(err => {
+                    console.error(err);
+                    alert("Error al Modificar");
+                });
         }
-fetch(this.url, options)
-    .then(function () {
-        alert("Registro modificado")
-window.location.href = "./usuario.html" // navega a productos.html
-})
-.catch (err => {
-    console.error(err);
-    alert("Error al Modificar")
-})
-}
-},
-created() {
-    this.fetchData(this.url)
-},
+    },
+    created() {
+        this.fetchData(this.url);
+    },
 }).mount("#app")
